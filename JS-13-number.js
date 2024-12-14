@@ -9,3 +9,14 @@ num2 = 3
 */
 
 //! Answer:
+let number1 = Math.floor(Math.random() * 16);
+let number2 = Math.floor(Math.random() * 16); 
+
+let numbers = [number1, number2];
+
+for (let i = 2; i < 10; i++) {
+    let num = (numbers[i - 1] + numbers[i - 2]) * 2;
+    numbers.push(num);
+}
+
+console.log(numbers);

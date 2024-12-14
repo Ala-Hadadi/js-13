@@ -146,3 +146,23 @@ const names = [
   "Naomi",
 ];
 //! Answer:
+
+function getAlphabet() {
+  let alphabet = prompt("Please enter an alphabet letter").toUpperCase();
+  if (alphabet.length !== 1) {
+    alert("Please enter only one alphabet letter.");
+    getAlphabet();
+  }
+  if (alphabet < "A" || alphabet > "Z") {
+    alert("Please enter only alphabets");
+    getAlphabet();
+  }
+  
+  let foundNames = names.filter((item) => item[0] === alphabet);
+  if (foundNames.length > 0) {
+    foundNames.forEach((name) => console.log(name));
+  } else {
+    console.log("nothing found");
+  }
+}
+getAlphabet();

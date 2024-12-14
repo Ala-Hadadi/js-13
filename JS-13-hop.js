@@ -8,3 +8,18 @@ Example: If the user enters the number 3, the numbers will be printed like this:
 1, 2, hop, 4, 5, hop, 7, 8, hop, 10 ..., 200 
 */
 //! Answer:
+
+let number = prompt("Enter a number between 2 and 6:");
+let strToNum = parseInt(number);
+
+if (strToNum >= 2 && strToNum <= 6) {
+  for (let i = 1; i < 201; i++) {
+    if (i % strToNum === 0) {
+      console.log("Hop");
+    } else {
+      console.log(i);
+    }
+  }
+} else {
+  console.log("A number between 2 & 6 !!!!!!");
+}
