@@ -21,5 +21,5 @@ if (strToNum >= 2 && strToNum <= 6) {
     }
   }
 } else {
-  console.log("A number between 2 & 6 !!!!!!");
+  console.log("Enter a number between 2 & 6 !!!!!!");
 }
